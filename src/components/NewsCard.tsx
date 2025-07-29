@@ -23,15 +23,15 @@ export const NewsCard = ({ item }: NewsCardProps) => {
   
   return (
     <article className={`
-      bg-card border-2 rounded-lg p-4 transition-all duration-200 
-      hover:shadow-lg hover:shadow-black/20 cursor-pointer
-      ${borderClasses}
+      bg-card border-2 rounded-lg p-6 transition-all duration-200 
+      hover:shadow-lg hover:shadow-black/30 cursor-pointer h-full
+      flex flex-col ${borderClasses}
     `}>
       <a 
         href={item.sourceUrl} 
         target="_blank" 
         rel="noopener noreferrer"
-        className="block"
+        className="block h-full flex flex-col"
       >
         <div className="flex items-start justify-between mb-3">
           <div className="flex items-center gap-4 text-sm text-secondary">
@@ -42,11 +42,11 @@ export const NewsCard = ({ item }: NewsCardProps) => {
           <ExternalLink size={16} className="text-secondary flex-shrink-0" />
         </div>
         
-        <h2 className="text-xl font-bold text-foreground mb-3 leading-tight">
+        <h2 className="text-lg font-bold text-foreground mb-3 leading-tight line-clamp-2">
           {item.headline}
         </h2>
         
-        <p className="text-foreground text-base leading-relaxed">
+        <p className="text-foreground text-sm leading-relaxed flex-1 line-clamp-3">
           {item.summary}
         </p>
       </a>

@@ -61,7 +61,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// News importance colors
+				'border-critical': 'hsl(var(--border-critical))',
+				'border-high': 'hsl(var(--border-high))',
+				'border-normal': 'hsl(var(--border-normal))',
+				// Status colors
+				'status-connected': 'hsl(var(--status-connected))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
